@@ -10,10 +10,10 @@ class Genre < ActiveRecord::Base
 
   def artist_count
     # binding.pry
-  song_array = self.songs.all
-  artists = song_array.each { |s| s.artist}
-  artists.size
-
+  # song_array = self.songs.all
+  # artists = song_array.each { |s| s.artist}
+  # artists.size
+  self.artists.count
   end
 
   def all_artist_names
