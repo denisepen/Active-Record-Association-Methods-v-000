@@ -20,6 +20,6 @@ class Genre < ActiveRecord::Base
     # binding.pry
   art =  self.artists.all
   art.collect {|a| art.name}
-
+end
   end
 end
