@@ -18,7 +18,7 @@ class Genre < ActiveRecord::Base
 
   def all_artist_names
     # binding.pry
-    song_array = songs.all
+    self.artists.all
 
   end
 end
