@@ -14,7 +14,7 @@ class Artist < ActiveRecord::Base
 
   def genre_count
     self.genres.count
-    
+
     # song_array = self.songs.all
     # genres = song_array.each { |s| s.genre}
     # genres.size
