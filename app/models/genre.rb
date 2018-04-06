@@ -19,7 +19,7 @@ class Genre < ActiveRecord::Base
   def all_artist_names
     # binding.pry
   art =  self.artists.all
-  art.collect {|a| art.name}
+  art.collect {|a| a.name}
 end
   end
 end
